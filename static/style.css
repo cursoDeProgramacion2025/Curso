@@ -1,0 +1,237 @@
+/* ==============================
+   Estilos generales
+   ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: black;
+
+    background-image: url('censimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #e3f2fd; /* celeste premium */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==============================
+   Header y menú
+   ============================== */
+header {
+    background: #0d1b2a; /* azul oscuro elegante */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #1e88e5; /* azul moderno */
+    color: white;
+}
+
+/* ==============================
+   Hero section
+   ============================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    text-align: center;
+    flex-wrap: wrap;
+
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 10px;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+}
+
+/* Texto del hero */
+.hero h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: #90caf9; /* celeste moderno */
+    font-size: 1.2rem;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #1e88e5; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #1565c0; /* azul hover premium */
+}
+
+/* ==============================
+   Secciones del contenido
+   ============================== */
+
+main {
+    padding: 2rem 0;
+    min-height: 70vh;
+}
+
+.noticias, .sobre-nosotros, .contacto {
+    background: linear-gradient(to right, #f6fbff, #e3f2fd); /* blanco azulado premium */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    margin-bottom: 2rem;
+}
+
+.noticia, .profesor {
+    background: #1e88e5;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #90caf9;
+    border-radius: 6px;
+}
+
+.noticia h4, .profesor h4 {
+    color: #f6fbff;
+}
+
+/* ==============================
+   Formulario
+   ============================== */
+.formulario-contacto {
+    background: #f6fbff;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Botón formulario */
+button[type="submit"] {
+    background: #1e88e5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #1565c0;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* ==============================
+   Cursos
+   ============================== */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1e88e5;
+    color: white;
+}
+
+.cursos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.curso {
+    background: #f6fbff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border-left: 6px solid #1e88e5;
+}
+
+.curso h2 {
+    margin-top: 0;
+    }
+
+.duracion {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #1e88e5;
+    color: white;
+    border-radius: 6px;
+}

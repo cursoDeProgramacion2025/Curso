@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="galeria">
+    <h2>Galería de Fotos – CENS N° 453</h2>
+
+    <div class="grid-galeria">
+        {% for i in range(1, 30) %}
+            <img src="/static/censgaleria/foto{{ i }}.jpg" alt="Foto {{ i }}">
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    .galeria {
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .grid-galeria {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .grid-galeria img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: transform .2s;
+    }
+
+    .grid-galeria img:hover {
+        transform: scale(1.05);
+    }
+</style>
+{% endblock %}

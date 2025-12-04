@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Sección Nosotros para tu página de Contacto -->
+<section id="nosotros" class="nosotros-container">
+    <div class="nosotros-card">
+        <h2>Sobre Nosotros</h2>
+        <p>El Centro Educativo de Nivel Secundario N.º 453, ubicado en Pueyrredón 3853 del Barrio Cri Cri de Garín, pertenece a la Modalidad de Educación de Jóvenes, Adultos y Adultos Mayores desde 2019. Su creación respondió a la necesidad de brindar una oportunidad educativa accesible para jóvenes y personas adultas que deseaban retomar sus estudios secundarios.</p>
+    </div>
+
+    <div class="nosotros-info-grid">
+        <div class="info-item">
+            <h3>Reseña Histórica</h3>
+            <p>El CENS 453 comenzó a funcionar en 2021 con seis secciones de 1.º, 2.º y 3.º año, acompañando trayectorias de estudiantes entre 18 y 68 años. Comenzó de manera virtual durante la pandemia y luego retornó a la presencialidad fortaleciendo la comunidad educativa.</p>
+        </div>
+        <div class="info-item">
+            <h3>Orientaciones</h3>
+            <ul>
+                <li>Gestión y Administración</li>
+                <li>Ciencias Sociales</li>
+            </ul>
+            <p>Los planes de estudio se enmarcan en la Resolución 6321/95 y en la implementación progresiva del nuevo Diseño Curricular (Res. 2993/22 y 3463/22).</p>
+        </div>
+        <div class="info-item">
+            <h3>Apuestas Pedagógicas</h3>
+            <ul>
+                <li>Identidad institucional</li>
+                <li>Sentido de pertenencia</li>
+                <li>Convivencia comunitaria</li>
+                <li>Aprendizaje contextualizado</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Trabajo Comunitario</h3>
+            <p>Participación en actividades distritales, jornadas institucionales, exposiciones internas y articulación con escuelas primarias y la comunidad.</p>
+        </div>
+        <div class="info-item">
+            <h3>Articulación Profesional</h3>
+            <p>En conjunto con el CFP N.º 402 se implementó el Ciclo de Vinculación Profesional y el trayecto Programador Informático, dictado en sede del CENS.</p>
+        </div>
+        <div class="info-item">
+            <h3>Perspectiva Actual</h3>
+            <p>En 2025 completa la implementación del nuevo Diseño Curricular, reafirmando su compromiso con garantizar el derecho a la educación, acompañar sueños y transformar vidas.</p>
+        </div>
+    </div>
+        <div class="info-item">
+            <h3>Valores</h3>
+            <ul>
+                <li>Compromiso</li>
+                <li>Creatividad</li>
+                <li>Transparencia</li>
+                <li>Pasión por ayudar</li>
+            </ul>
+        </div>
+     
+
+<style>
+    .nosotros-container {
+        width: 90%;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .nosotros-card h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .nosotros-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .info-item {
+        padding: 15px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .info-item h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .info-item ul {
+        padding-left: 20px;
+    }
+</style>
+{% endblock %}

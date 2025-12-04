@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <!-- Contenedor del logo centrado -->
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='cens453.jpg') }}" alt="Logo CENS 453" class="logo">
+    </div>
+
+    <h2>Bienvenido al CENS N° 453</h2>
+<p>
+    <em>"La educación no cambia al mundo, cambia a las personas que cambiarán el mundo".</em>
+ <br>
+        <span class="highlight-text">Inscribite al Cens y comenzá a transformar tu futuro</span>
+  
+<br>
+  
+    <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+</p>
+</section>
+
+
+<section class="noticias">
+    <h3>Últimas Noticias</h3>
+
+    <div class="noticia">
+        <h4>Inscripciones Abiertas 2026</h4>
+        <p>Ya puedes reservar tu vacante para el próximo ciclo lectivo. ¡No te quedes afuera!</p>
+    </div>
+
+    <div class="noticia">
+        <h4>Fotos de los estudiantes y los cursos</h4>
+        <p>Nuestros alumnos presentarán sus proyectos este viernes en el salón de actos.</p>
+        <a href="/censgaleria" target="_blank" class="galeria-link">
+            Ver galería de fotos 📸
+        </a>
+    </div>
+</section>
+{% endblock %}
